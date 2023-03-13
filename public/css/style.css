@@ -1,0 +1,571 @@
+
+/****** CSS for Pokemon Types ******/
+.pkn-type {
+    color: white;
+    border: 2px solid #000;
+	border-radius: 20px;
+	padding: 4px 16px;
+}
+
+.pkn-type-empty {
+    color: rgba(255, 255, 255, 0);
+    border: 2px solid #ffffff00;
+	border-radius: 20px;
+	padding: 4px 16px;
+}
+
+.pkn-type-black {
+	background-color: black;;
+    border: 2px solid #000000;
+	border-radius: 20px;
+	padding: 4px 16px;
+
+}
+
+.pkn-type-white {
+	background-color: white;;
+    color: white;
+    border: 2px solid #000;
+	border-radius: 20px;
+	padding: 4px 16px;
+}
+
+.pokemon {
+    border: 2px solid #ff0000;
+	border-radius: 20px;
+	padding: 4px 16px;
+}
+
+.empty {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
+}
+.empty:after {
+    content: "Empty"
+}
+
+.normal {
+	background-color: #A8A878;
+	border-color: #6D6D4E;
+}
+.normal:after {
+	content: 'Normal';
+}
+.normal-battle {
+	background-color: #A8A878;
+	border-color: #6D6D4E;
+}
+
+.fire {
+	background-color: #F08030;
+	border-color: #9C531F;
+}
+.fire:after {
+	content: 'Fire';
+}
+.fire-battle {
+	background-color: #F08030;
+	border-color: #9C531F;
+}
+
+.water {
+	background-color: #6890F0;
+	border-color: #445E9C;
+}
+.water:after {
+	content: 'Water';
+}
+.water-battle {
+	background-color: #6890F0;
+	border-color: #445E9C;
+}
+
+.electric {
+	background-color: #F8D030;
+	border-color: #A1871F;
+}
+.electric:after {
+	content: 'Electric';
+}
+.electric-battle {
+	background-color: #F8D030;
+	border-color: #A1871F;
+}
+
+.grass {
+	background-color: #78C850;
+	border-color: #4E8234;
+}
+.grass:after {
+	content: 'Grass';
+}
+.grass-battle {
+	background-color: #78C850;
+	border-color: #4E8234;
+}
+
+.ice {
+	background-color: #98D8D8;
+	border-color: #638D8D;
+}
+.ice:after {
+	content: 'Ice';
+}
+.ice-battle {
+	background-color: #98D8D8;
+	border-color: #638D8D;
+}
+
+.fighting {
+	background-color: #C03028;
+	border-color: #7D1F1A;
+}
+.fighting:after {
+	content: 'Fighting';
+}
+.fighting-battle {
+	background-color: #C03028;
+	border-color: #7D1F1A;
+}
+
+.poison {
+	background-color: #A040A0;
+	border-color: #682A68;
+}
+.poison:after {
+	content: 'Poison';
+}
+.poison-battle {
+	background-color: #A040A0;
+	border-color: #682A68;
+}
+
+.ground {
+	background-color: #E0C068;
+	border-color: #927D44;
+}
+.ground:after {
+	content: 'Ground';
+}
+.ground-battle {
+	background-color: #E0C068;
+	border-color: #927D44;
+}
+
+.flying {
+	background-color: #A890F0;
+	border-color: #6D5E9C;
+}
+.flying:after {
+	content: 'Flying';
+}
+.flying-battle {
+	background-color: #A890F0;
+	border-color: #6D5E9C;
+}
+
+.psychic {
+	background-color: #F85888;
+	border-color: #A13959;
+}
+.psychic:after {
+	content: 'Psychic';
+}
+.psychic-battle {
+	background-color: #F85888;
+	border-color: #A13959;
+}
+
+.bug {
+	background-color: #A8B820;
+	border-color: #6D7815;
+}
+.bug:after {
+	content: 'Bug';
+}
+.bug-battle {
+	background-color: #A8B820;
+	border-color: #6D7815;
+}
+
+.rock {
+	background-color: #B8A038;
+	border-color: #786824;
+}
+.rock:after {
+	content: 'Rock';
+}
+.rock-battle {
+	background-color: #B8A038;
+	border-color: #786824;
+}
+
+.ghost {
+	background-color: #705898;
+	border-color: #493963;
+}
+.ghost:after {
+	content: 'Ghost';
+}
+.ghost-battle {
+	background-color: #705898;
+	border-color: #493963;
+}
+
+.dragon {
+	background-color: #7038F8;
+	border-color: #4924A1;
+}
+.dragon:after {
+	content: 'Dragon';
+}
+.dragon-battle {
+	background-color: #7038F8;
+	border-color: #4924A1;
+}
+
+.dark {
+	background-color: #705848;
+	border-color: #49392F;
+}
+.dark:after {
+	content: 'Dark';
+}
+.dark-battle {
+	background-color: #705848;
+	border-color: #49392F;
+}
+
+.steel {
+	background-color: #B8B8D0;
+	border-color: #787887;
+}
+.steel:after {
+	content: 'Steel';
+}
+.steel-battle {
+	background-color: #B8B8D0;
+	border-color: #787887;
+}
+
+.fairy {
+	background-color: #EE99AC;
+	border-color: #9B6470;
+}
+.fairy:after {
+	content: 'Fairy';
+}
+.fairy-battle {
+	background-color: #EE99AC;
+	border-color: #9B6470;
+}
+
+/****** CSS For Main Handlebars file ******/
+.text-title-main {
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+}
+
+.text-black-shadow {
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+/****** CSS For Homepage Handlebars file ******/
+.title-card-homepage {
+    background-color: rgba(255, 0, 0, 0.70);
+    border-radius: 10px;
+	margin-top: 5%;
+    margin-left: 10%;
+    padding: 1% 1% 3% 1%;
+    text-shadow: 5px 5px 5px black;
+}
+
+.hall-of-fame {
+    background-color: rgba(79, 141, 199, 0.75);
+    border-radius: 10px;
+    border-bottom: 5px rgb(0,0,128) solid;
+    font-size: 5px;
+}
+
+.text-blue-bold {
+    color: rgb(0,0,128);
+    font-weight: bold;
+    text-shadow: 1px 1px 5px white;
+}
+
+/****** CSS For Login Handlebars file ******/
+.login {
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 10px;
+    margin-top: 15%;
+}
+
+.custom-font-size {
+	font-size: 16px;
+}
+
+/****** CSS For Pokedex Handlebars file ******/
+.custom-button-pokedex {
+	margin-bottom: 3%;
+	border-radius: 10px;
+}
+
+.custom-title-card-pokedex {
+	background-color: rgba(110, 18, 231, 0.85);
+    border-radius: 10px;
+    margin: 3%;
+    text-shadow: 5px 5px 5px black;
+}
+
+/****** CSS For Trainer-Pokedex Handlebars file ******/
+.custom-button-trainerpokedex {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(139, 19, 19);
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.trainerpokedex-container{
+	padding-top: 50px;
+	height: 850px;
+	background-color: rgb(24, 24, 24);
+	padding: 20px;
+}
+
+.party-pokemon-card {
+	display: block;
+	justify-content: center;
+	background-color: rgb(53, 53, 53);
+	height: 150px;
+	margin: 10px;
+	border-radius: 20px;
+	border: white;
+}
+
+.party-pokemon-card img {
+	height: auto;
+	width: 100%;
+	position: relative;
+	top: 16px;
+}
+
+#pokedex-search {
+	height: 30px;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 2px solid rgb(139, 19, 19);
+	border-radius: 10px;
+	background-color: white;
+	background-image: url('../assets/search.png');
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	background-size: 20px;
+}
+
+.party-nav {
+	position:absolute;
+	top: 800px
+}
+
+.trainerpokedex-img {
+	width: auto;
+	position: relative;
+
+}
+
+.pokedex-image {
+	width: 100%;
+	 
+}
+
+
+.party-name {
+	color: white;
+	text-align: center;
+}
+
+.remove-pokemon {
+	border-radius: 100%;
+	background: red;
+	color: white;
+	position: absolute;
+}
+
+#trainer-pokedex{
+	height: 700px;
+	overflow-y: auto;
+	padding: 20px;
+
+}
+
+.add-pokemon {
+	border-radius: 100%;
+	background: rgb(5, 170, 46);
+	color: white;
+	/* position: absolute; */
+}
+
+.darken {
+	filter: brightness(10%);
+}
+
+/****** CSS For Dashboard Handlebars file ******/
+.edit-a {
+    font-size: 25px;
+    color: #8b1313;
+}
+
+.edit-a:hover {
+    font-size: 32px;
+    color: #ff0000;
+	text-decoration: underline;
+	transition: .3s ease-out;
+}
+
+.hr {
+  width: 100px;
+  height: 5px;
+  background-color: #8b1313;
+}
+
+.dashboard-bot-padding {
+	padding-bottom: 7%;
+}
+
+.img-pokemon {
+    color: white;
+    border: 2px solid #000;
+	border-radius: 20px;
+	padding: 4px 16px;
+	margin-top: 4%;
+}
+
+.p-dashboard {
+    font-size: 15px;
+    color: #8b1313;
+    font-weight: bold;
+    text-align: center;
+}
+
+.p-score {
+    font-size: 19px;
+    color: #8b1313;
+    font-weight: bold;
+    text-align: center;
+}
+
+.p-points {
+    font-size: 24px;
+    color: #8b1313;
+    text-shadow: 1px 1px 2px rgb(238, 255, 6);
+    font-weight: bold;
+    text-align: center;
+}
+
+.dash-card-padding {
+    padding: 2%;
+}
+
+.custom-party-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    border: 3px rgb(139, 19, 19) solid;
+    margin-top: 6%;
+}
+
+.dash-card-title {
+    color: #8b1313;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.dash-card-img {
+    height: auto; 
+    width: 100%;
+	max-width: 200px;
+    position: relative;
+	border: 3px rgb(23, 165, 4) solid;
+    border-radius: 10px;
+
+}
+
+.custom-dash-battle {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    margin: 1%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/****** CSS For Battle Handlebars file ******/
+.return-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(104, 5, 5);
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    margin: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.custom-button-battle {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    margin: 5%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.text-battle {
+    color:rgb(139, 19, 19);
+}
+
+.battle-pokemon-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    border: 1px rgb(78, 78, 78) solid;
+}
+
+.battle-other-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    margin-top: 20%;
+
+}
+
+.other-card-party {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    margin-top: 6%;
+
+}
+
+.battle-wild-card {
+    background-color: rgba(253, 7, 7, 0.85);
+    border-radius: 10px;
+    margin-top: 20%;
+}
+
+.battle-dark-card {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0% 3% 3% 3%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+

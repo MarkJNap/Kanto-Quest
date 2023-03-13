@@ -1,0 +1,63 @@
+<style>
+.background-img-trainerpokedex {
+    background-image: url(assets/trainer-pokedex-bg.jpg);
+    width: 100%;
+    min-height: 100vh;
+}
+</style>
+
+{{!-- Trainer's Pokedex handlebars --}}
+{{!-- Center of Page --}}
+<section class="background background-img-trainerpokedex">
+    <section class="container row col s6 trainerpokedex-container">
+        <div class="col s3">
+            <div class="col s9">
+                <h3 class="center white-text">Your Party</h3>
+            </div>
+            <div class="row " id="party-box">
+                {{#each pokemons}}
+                {{#with this.trainer_pokemon}}
+                {{#with this.is_in_party}}
+                <div class="col s5 z-depth-3 party-pokemon-card">
+                    <button class="waves-effect waves-light btn-small remove-pokemon" data-id="{{../trainer_id}}" data-pokemon-id="{{../../id}}">-</button>
+                    <div class="pokemon-details">
+                        <img class="party-img" src="{{../../sprite}}">
+                        <p class="party-name">{{capitalize ../../name}}</p>
+                    </div>
+                </div>
+                {{/with}}
+                {{/with}}
+                {{/each}}
+            </div>
+            <div class="center">
+                <a class="waves-effect waves-light btn custom-dash-battle" href="/battle"><i class="material-icons right">gamepad</i>Battle</a>
+            <a class="waves-effect waves-light btn return-btn" href="/dashboard">Go back!</a>
+            </div>
+        </div>
+        <div class="col s9" id="pokedex">
+            {{!-- Search Bar --}}
+            <div class="row">
+                <div>
+                    <input class="col m5 s12" type="text" id="pokedex-search" onkeyup="filterPokemon()" placeholder="Search for Pokemon"/>
+                    <p class="col s4">
+                        <label>
+                            <input id="caught-pokemon" type="checkbox" onclick="filterCaughtPokemon()">
+                            <span>Only show caught pokemon</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            {{!-- {{log pokedex}} --}}
+            <ul id="trainer-pokedex">
+                {{#each pokedex}}
+                {{!-- An Individual Pokemons Pokedex Info--}}
+                {{> trainer-pokedex-entry}}
+                {{/each}}
+            </ul>
+            
+
+        </div>
+    </section>
+</section>
+
+<script src="/js/trainer-pokedex.js"></script>

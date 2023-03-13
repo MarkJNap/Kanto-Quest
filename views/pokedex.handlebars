@@ -1,0 +1,23 @@
+<style>
+.background-img-pokedex {
+    background-image: url(assets/pokedex-background.jpg);
+}
+</style>
+
+{{!-- Global Pokedex handlebars --}}
+{{!-- Center of Page --}}
+<section class="background-img-pokedex">
+  <div class="container row">
+    <div class="col s12 custom-title-card-pokedex center">
+      <h1 class="white-text center">View All Pokemon To Catch!</h1>
+      <a class="waves-effect waves-light btn-large red custom-button-pokedex left" href="/dashboard">Return to Dashboard</a>
+      <a class="waves-effect waves-light btn-large blue custom-button-pokedex right" href="https://img.pokemondb.net/images/typechart-gen1.png" target="_blank">Type Chart Image</a>
+    </div>
+    <div class="col s12">
+      {{#each pokemons as |pokemon|}}
+      {{!-- An Individual Pokemons Pokedex Info--}}
+      {{> pokedex-entry}}
+      {{/each}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+
+{{!-- Pokedex entries partial --}}
+<div class="card col s6 m4 l3 pokemon center z-depth-4">
+  <h5 class="center">#{{id}}</h5>
+  <img class="col s12 pokedex-img" src="{{sprite}}" alt="{{name}} Pokemon Sprite"/>
+  <h5 class="center col s12">{{capitalize name}}</h5>
+  <div class="col s12">
+    {{! // if pokemon has 2 types }}
+    {{#if type_two}}
+      <p class="center pkn-type {{type_one}}"></p>
+      <p class="center pkn-type {{type_two}}"></p>
+    {{else}}
+      <p class="center pkn-type {{type_one}}"></p>
+      {{!-- Fix for spacing --}}
+      <p class="pkn-type-empty empty"></p>
+
+    {{/if}}
+  </div>
+</div>

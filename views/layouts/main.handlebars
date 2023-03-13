@@ -1,0 +1,45 @@
+{{!-- Main handlebars --}}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KantoQuest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+
+  <body>
+
+    {{! <!-- Top Navbar --> }}
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper red">
+        <a href="/" class="brand-logo center black-text text-title-main">KantoQuest</a>
+        <ul class="left">
+          <li><a class="white-text text-black-shadow" href="/">Homepage</a></li>
+          <li><a class="white-text text-black-shadow" href="/dashboard">User Dashboard</a></button>
+        </ul>
+        <ul class="right">
+          <li><a class="white-text text-black-shadow" href="/pokedex">Pokedex</a></li>
+          {{#if logged_in}}
+          <li><a class="white-text text-black-shadow" href="/" id="logout">Logout</a></button>
+          {{else}}
+          <li><a class="white-text text-black-shadow" href="/login">Sign-up</a></button>
+          {{/if}}
+          <li><a class="white-text text-black-shadow" href="https://github.com/RyanMcd29/pokemon-battle/" target="_blank">Our GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    {{! <!-- Content Container --> }}
+    <main>
+      {{{body}}}
+    </main>
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+  </body>
+</html>

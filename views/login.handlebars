@@ -1,0 +1,58 @@
+<style>
+  .background-img-login {
+    background-image: url(assets/Pokemon-background-2.jpg);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    min-height: 100vh;
+  }
+</style>
+
+
+{{!-- Login Page handlebars --}}
+<section class="row background-img-login">
+  <div class="col s12 m12 l4 offset-l1 login">
+    {{! Login form }}
+    <h2 class="white-text">Login:</h2>
+    <form class="login-form">
+      <div>
+        <label class="white-text custom-font-size " for="email-login">Email:</label>
+        <input class="white-text" type="text" id="email-login" />
+      </div>
+      <div>
+        <label class="white-text custom-font-size" for="password-login">Password:</label>
+        <input class="white-text" type="password" id="password-login" />
+      </div>
+      <p id="error" style="opacity:0; color: white; font-weight:700;" >
+        Please enter valid credentials
+      </p>
+      <div>
+        <button class="btn red white-text text-black-shadow" type="submit">Login!</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col s12 m12 l4 offset-l1 login">
+    {{! SIgnup form }}
+    <h2 class="white-text">Signup:</h2>
+    <form class="signup-form">
+      <div>
+        <label class="white-text custom-font-size" for="user-signup">Username:</label>
+        <input class="white-text" type="text" id="user-signup" />
+      </div>
+      <div>
+        <label class="white-text custom-font-size" for="email-signup">Email:</label>
+        <input class="white-text" type="text" id="email-signup" />
+      </div>
+      <div>
+        <label class="white-text custom-font-size" for="password-signup">Password:</label>
+        <input class="white-text" type="password" id="password-signup" />
+      </div>
+      <div>
+        <button class="btn red white-text text-black-shadow" type="submit">Sign up!</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="/js/login.js"></script>
